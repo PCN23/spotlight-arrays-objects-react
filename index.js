@@ -72,7 +72,7 @@ export const getFirstTwoArgs = (...arr) => {
 //    return a NEW object, do not modify the object passed in to the function
 //    use spread operator to create a new object
 
-export const addSneakerCount = ({ object, shoes }) => {
+export const addSneakerCount = ({ shoes }) => {
   const shoeLength = shoes.length
   return ({...shoes, sneakerCount : shoeLength});
   
@@ -101,9 +101,8 @@ export const totalSneakerCount = ( brands ) => {
 // convertToArray({}) => []
 // Source: https://edabit.com/challenge/pPNAs5PvB3WvnDwDM
 
-export const convertToArray = (objects) => {
-  return objects.entries(objects);
-  
+export const convertToArray = (object) => {
+  return Object.entries(object);
 }
 
 //
