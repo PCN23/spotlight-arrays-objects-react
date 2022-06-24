@@ -81,8 +81,9 @@ export const addSneakerCount = ({ object, shoes }) => {
 // INPUT: brands from data.js
 // OUTPUT: the brand names listed
 // REQS: use Object.keys to solve
-export const getBrandNames = () => {
-  const brandName = 
+export const getBrandNames = ( brands ) => {
+ return (Object.keys(brands));
+  
 }
 
 // INPUT: brands from data.js
